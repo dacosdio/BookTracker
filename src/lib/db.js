@@ -9,6 +9,12 @@ const db = client.db("BookTrackerDB"); // neue Datenbank
 // Books
 //////////////////////////////////////////
 
+async function searchBooks(query) {
+  const collection = db.collection("books");
+  const searchRegex = new RegExp(query, "i");
+}
+
+
 // Get all books
 async function getBooks() {
   let books = [];
