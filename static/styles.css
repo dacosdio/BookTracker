@@ -45,3 +45,12 @@ a:hover {
     text-decoration: underline;
     color: #1e90ff;
 }
+
+.book-details-box {
+    background-color: #333;
+    border: 1px solid #555;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+}

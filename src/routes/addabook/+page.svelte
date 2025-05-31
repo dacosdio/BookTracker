@@ -9,9 +9,9 @@
     let favourite = $state(false);
 </script>
 
-<h1>Add A Book</h1>
+<h1>New Book</h1>
 
-<a href="/books">Back</a>
+<a href="/books" class="btn btn-primary" style="margin-bottom: 1rem;">Back</a>
 <form method="Post" action="?/create">
     <div class="mb-3">
         <label for="titleInput" class="form-label">Title</label>
@@ -59,9 +59,8 @@
         >
             <option>Fantasy</option>
             <option>Science Fiction</option>
-            <option>Biography</option>
             <option>Romance</option>
-            <option>Non-Fiction</option>
+            <option>Thriller</option>
         </select>
     </div>
 

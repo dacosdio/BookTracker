@@ -3,6 +3,9 @@
 </script>
 
 <div class="book-card">
+  <div>
+    <img class="img-fluid" src={book.poster} alt="" />
+  </div>
   <div class="details">
     <div class="title">
       <a href={"/books/" + book._id}>{book.title}</a>

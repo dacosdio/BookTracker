@@ -16,5 +16,26 @@
             <input type="hidden" name="bookId" value={book._id} />
             <button type="submit">Remove from Favorites</button>
         </form>
+
+        <form method="post" action="?/updateStatus">
+            <input type="hidden" name="bookId" value={book._id} />
+            <label for={"status-" + book._id}>Change Status:</label>
+            <select
+                name="status"
+                id={"status-" + book._id}
+                style="margin: 0 0.5rem;"
+            >
+                <option value="planned" selected={book.status === "planned"}
+                    >Planned</option
+                >
+                <option value="reading" selected={book.status === "reading"}
+                    >Reading</option
+                >
+                <option value="read" selected={book.status === "read"}
+                    >Read</option
+                >
+            </select>
+            <button type="submit">Update Status</button>
+        </form>
     </div>
 {/each}

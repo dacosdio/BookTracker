@@ -29,4 +29,19 @@ export const actions = {
     }
 };
 
+updateStatus: async ({ request }) => {
+    console.log("Update Status");
+    let data = await request.formData();
+    let id = data.get("bookId");
+    let status = data.get("status");
+
+    let book = {
+        _id: id,
+        status: status
+    };
+
+    await db.updateBook(book);
+}
+
+
 
