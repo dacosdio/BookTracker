@@ -5,13 +5,19 @@
 <div class="book-card">
   <div class="details">
     <div class="title">
-      <a href={"/books/"+book._id}>{book.title}</a>
+      <a href={"/books/" + book._id}>{book.title}</a>
+    </div>
+    <div>
+      Author: {book.author}
     </div>
     <div>
       Jahr: {book.year}
     </div>
     <div>
-      Author: {book.author}
+      Genre: {book.genre}
+    </div>
+    <div>
+      Rating: {book.rating}
     </div>
   </div>
 </div>

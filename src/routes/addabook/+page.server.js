@@ -9,7 +9,10 @@ export const actions = {
             title: data.get("title"),
             year: data.get("year"),
             author: data.get("author"),
+            status: data.get("status"),
+            genre: data.get("genre"),
+
         }
-        await db.createMovie(book);
+        await db.createBook(book);
     }
 }
