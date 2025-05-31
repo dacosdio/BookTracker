@@ -65,8 +65,9 @@ Example:
 async function createBook(book) {
   try {
 
-    if (typeof book.favorite === 'undefined' || book.favorite === null) {
-      book.favorite = false; 
+    // Standard-Wert für poster setzen, falls nicht gesetzt
+    if (!book.poster) {
+      book.poster = "/images/placeholder.jpg";
     }
 
     const collection = db.collection("books");
@@ -119,6 +120,16 @@ async function deleteBook(id) {
   return null;
 }
 
+async function getAuthors() {
+    const collection = db.collection("authors");
+    const authors = await collection.find({}).toArray();
+    authors.forEach(author => {
+        author._id = author._id.toString();
+    });
+    return authors;
+}
+
+
 // Export functions
 export default {
   getBooks,
@@ -126,4 +137,5 @@ export default {
   createBook,
   updateBook,
   deleteBook,
+  getAuthors,
 };

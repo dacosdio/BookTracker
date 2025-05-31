@@ -32,7 +32,7 @@
           <a class="nav-link" href="/favouritebooks">Favourite Books</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/reviews">Reviews</a>
+          <a class="nav-link" href="/authors">Authors</a>
         </li>
       </ul>
     </div>

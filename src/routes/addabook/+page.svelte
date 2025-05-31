@@ -77,17 +77,6 @@
         />
     </div>
 
-    <div class="form-check mb-3">
-        <input
-            id="favCheck"
-            class="form-check-input"
-            type="checkbox"
-            name="favourite"
-            bind:checked={favourite}
-        />
-        <label class="form-check-label" for="favCheck">Mark as Favourite</label>
-    </div>
-
     <button type="submit" class="btn btn-primary">Save Book</button>
 </form>
 

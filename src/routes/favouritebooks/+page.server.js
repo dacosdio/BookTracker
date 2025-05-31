@@ -13,9 +13,8 @@ export async function load() {
     };
 }
 
-
 export const actions = {
-    removeFromFavourites: async ({ request }) => {
+    removeFromFavorites: async ({ request }) => {
         console.log("Remove from Favourites");
         let data = await request.formData();
         let id = data.get("bookId");
@@ -26,22 +25,23 @@ export const actions = {
         };
 
         await db.updateBook(book);
+
+        // Page reloads automatically → load() runs again!
+    },
+
+    updateStatus: async ({ request }) => {
+        console.log("Update Status");
+        let data = await request.formData();
+        let id = data.get("bookId");
+        let status = data.get("status");
+
+        let book = {
+            _id: id,
+            status: status
+        };
+
+        await db.updateBook(book);
+
+        // Page reloads automatically → load() runs again!
     }
 };
-
-updateStatus: async ({ request }) => {
-    console.log("Update Status");
-    let data = await request.formData();
-    let id = data.get("bookId");
-    let status = data.get("status");
-
-    let book = {
-        _id: id,
-        status: status
-    };
-
-    await db.updateBook(book);
-}
-
-
-
