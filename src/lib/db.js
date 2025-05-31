@@ -64,6 +64,11 @@ Example:
 */
 async function createBook(book) {
   try {
+
+    if (typeof book.favorite === 'undefined' || book.favorite === null) {
+      book.favorite = false; 
+    }
+
     const collection = db.collection("books");
     const result = await collection.insertOne(book);
     return result.insertedId.toString();
@@ -72,6 +77,7 @@ async function createBook(book) {
   }
   return null;
 }
+
 
 // Update an existing book
 async function updateBook(book) {

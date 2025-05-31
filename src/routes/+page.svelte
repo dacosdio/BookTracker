@@ -45,7 +45,7 @@
           <h5 class="card-title"><strong>Favorite Books</strong></h5>
           <p class="card-text">View your favorite books. All books that you marked as favorites are shown here for quick access.</p>
           <div class="mt-auto">
-            <a href="/favourites" class="btn btn-primary">View Favorites</a>
+            <a href="/favouritebooks" class="btn btn-primary">View Favorites</a>
           </div>
         </div>
       </div>

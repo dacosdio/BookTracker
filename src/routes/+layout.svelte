@@ -29,7 +29,7 @@
           <a class="nav-link" href="/addabook">New Book</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/favourites">Favourite Books</a>
+          <a class="nav-link" href="/favouritebooks">Favourite Books</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/reviews">Reviews</a>
