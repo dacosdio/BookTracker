@@ -12,7 +12,7 @@
     <!-- Card 1 -->
     <div class="col-md-6 col-lg-3 d-flex">
       <div class="card feature-card flex-fill">
-        <img src="/booklist.png" class="card-img-top img-fluid" alt="Booklist" style="object-fit: contain; height: 200px;" />
+        <img src="/images/booklist.png" class="card-img-top img-fluid" alt="Booklist" style="object-fit: contain; height: 200px;" />
         <div class="card-body text-center d-flex flex-column">
           <h5 class="card-title"><strong>Book List</strong></h5>
           <p class="card-text">Browse your complete collection of books. See all your added books in one place and manage them easily.</p>
@@ -26,7 +26,7 @@
     <!-- Card 2 -->
     <div class="col-md-6 col-lg-3 d-flex">
       <div class="card feature-card flex-fill">
-        <img src="/addabook.png" class="card-img-top img-fluid" alt="Add a Book" style="object-fit: contain; height: 200px;" />
+        <img src="/images/addabook.png" class="card-img-top img-fluid" alt="Add a Book" style="object-fit: contain; height: 200px;" />
         <div class="card-body text-center d-flex flex-column">
           <h5 class="card-title"><strong>Add New Book</strong></h5>
           <p class="card-text">Add a new book to your tracker. Enter the book's title, author, genre, and other details.</p>
@@ -40,7 +40,7 @@
     <!-- Card 3 -->
     <div class="col-md-6 col-lg-3 d-flex">
       <div class="card feature-card flex-fill">
-        <img src="/favorites.png" class="card-img-top img-fluid" alt="Favorites" style="object-fit: contain; height: 200px;" />
+        <img src="/images/favorites.png" class="card-img-top img-fluid" alt="Favorites" style="object-fit: contain; height: 200px;" />
         <div class="card-body text-center d-flex flex-column">
           <h5 class="card-title"><strong>Favorite Books</strong></h5>
           <p class="card-text">View your favorite books. All books that you marked as favorites are shown here for quick access.</p>
@@ -54,7 +54,7 @@
     <!-- Card 4 -->
     <div class="col-md-6 col-lg-3 d-flex">
       <div class="card feature-card flex-fill">
-        <img src="/Reviews.png" class="card-img-top img-fluid" alt="Reviews" style="object-fit: contain; height: 200px;" />
+        <img src="/images/Reviews.png" class="card-img-top img-fluid" alt="Reviews" style="object-fit: contain; height: 200px;" />
         <div class="card-body text-center d-flex flex-column">
           <h5 class="card-title"><strong>Book Reviews</strong></h5>
           <p class="card-text">Read reviews for books in your collection. See what others think and share your own reviews.</p>
