@@ -60,7 +60,8 @@
 <div class="row">
   {#each getFilteredBooks() as book}
     <div class="col-sm-6 col-md-4 col-lg-3 mb-2 gx-2">
-      <BookCard {book}></BookCard>
+      <BookCard {book} />
+
     </div>
   {/each}
 </div>

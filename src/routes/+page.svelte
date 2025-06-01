@@ -1,69 +1,62 @@
-<div class="titlepage">
-  <div class="bookstracker text-center">
-    <h1>Welcome to Bookstracker</h1>
-    <p class="lead">Your tracker and search engine for books!</p>
-    <a href="/booklist" class="btn btn-primary btn-lg">Get Started</a>
-  </div>
-</div>
+<h1 class="text-light mb-4">Welcome to Bookstracker</h1>
+<p class="text-secondary mb-4">Your tracker and search engine for books!</p>
+<a href="/books" class="btn btn-primary mb-5">Get Started</a>
 
-<div class="container">
-  <div class="row mt-5">
-
-    <!-- Card 1 -->
-    <div class="col-md-6 col-lg-3 d-flex">
-      <div class="card feature-card flex-fill">
-        <img src="/images/booklist.png" class="card-img-top img-fluid" alt="Booklist" style="object-fit: contain; height: 200px;" />
-        <div class="card-body text-center d-flex flex-column">
-          <h5 class="card-title"><strong>Book List</strong></h5>
-          <p class="card-text">Browse your complete collection of books. See all your added books in one place and manage them easily.</p>
-          <div class="mt-auto">
-            <a href="/books" class="btn btn-primary">Go to Book List</a>
-          </div>
+<!-- Cards Section (without Book List) -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <!-- Add New Book -->
+    <div class="col">
+        <div class="card h-100 bg-secondary text-white border border-secondary">
+            <img src="/images/addabook.png" class="card-img-top p-3" alt="Add New Book" />
+            <div class="card-body">
+                <h5 class="card-title text-warning">Add New Book</h5>
+                <p class="card-text text-light">
+                    Add a new book to your tracker. Enter the book's title, author, genre, and other details.
+                </p>
+                <a href="/addabook" class="btn btn-primary">Add a New Book</a>
+            </div>
         </div>
-      </div>
     </div>
 
-    <!-- Card 2 -->
-    <div class="col-md-6 col-lg-3 d-flex">
-      <div class="card feature-card flex-fill">
-        <img src="/images/addabook.png" class="card-img-top img-fluid" alt="Add a Book" style="object-fit: contain; height: 200px;" />
-        <div class="card-body text-center d-flex flex-column">
-          <h5 class="card-title"><strong>Add New Book</strong></h5>
-          <p class="card-text">Add a new book to your tracker. Enter the book's title, author, genre, and other details.</p>
-          <div class="mt-auto">
-            <a href="/addabook" class="btn btn-primary"> Add a New Book</a>
-          </div>
+    <!-- Favorite Books -->
+    <div class="col">
+        <div class="card h-100 bg-secondary text-white border border-secondary">
+            <img src="/images/favorites.png" class="card-img-top p-3" alt="Favorite Books" />
+            <div class="card-body">
+                <h5 class="card-title text-warning">Favorite Books</h5>
+                <p class="card-text text-light">
+                    View your favorite books. All books that you marked as favorites are shown here for quick access.
+                </p>
+                <a href="/favourites" class="btn btn-primary">View Favorites</a>
+            </div>
         </div>
-      </div>
     </div>
 
-    <!-- Card 3 -->
-    <div class="col-md-6 col-lg-3 d-flex">
-      <div class="card feature-card flex-fill">
-        <img src="/images/favorites.png" class="card-img-top img-fluid" alt="Favorites" style="object-fit: contain; height: 200px;" />
-        <div class="card-body text-center d-flex flex-column">
-          <h5 class="card-title"><strong>Favorite Books</strong></h5>
-          <p class="card-text">View your favorite books. All books that you marked as favorites are shown here for quick access.</p>
-          <div class="mt-auto">
-            <a href="/favouritebooks" class="btn btn-primary">View Favorites</a>
-          </div>
+    <!-- Authors -->
+    <div class="col">
+        <div class="card h-100 bg-secondary text-white border border-secondary">
+            <img src="/images/authors.png" class="card-img-top p-3" alt="Authors" />
+            <div class="card-body">
+                <h5 class="card-title text-warning">Authors</h5>
+                <p class="card-text text-light">
+                    Explore the authors of your books. View biographies and see which books you have from each author.
+                </p>
+                <a href="/authors" class="btn btn-primary">View Authors</a>
+            </div>
         </div>
-      </div>
     </div>
 
-    <!-- Card 4 -->
-    <div class="col-md-6 col-lg-3 d-flex">
-      <div class="card feature-card flex-fill">
-        <img src="/images/Reviews.png" class="card-img-top img-fluid" alt="Reviews" style="object-fit: contain; height: 200px;" />
-        <div class="card-body text-center d-flex flex-column">
-          <h5 class="card-title"><strong>Book Reviews</strong></h5>
-          <p class="card-text">Read reviews for books in your collection. See what others think and share your own reviews.</p>
-          <div class="mt-auto">
-            <a href="/reviews" class="btn btn-primary">View Reviews</a>
-          </div>
+    <!-- Statistics -->
+    <div class="col">
+        <div class="card h-100 bg-secondary text-white border border-secondary">
+            <img src="/images/statistics.png" class="card-img-top p-3" alt="Statistics" />
+            <div class="card-body">
+                <h5 class="card-title text-warning">Statistics</h5>
+                <p class="card-text text-light">
+                    View interesting statistics about your book collection: total books, ratings, genres, favorite authors, and more!
+                </p>
+                <a href="/statistics" class="btn btn-primary">View Statistics</a>
+            </div>
         </div>
-      </div>
     </div>
-
-  </div>
 </div>

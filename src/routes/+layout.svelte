@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/books">Bookslist</a>
@@ -33,6 +33,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/authors">Authors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/statistics">Statistic</a>
         </li>
       </ul>
     </div>

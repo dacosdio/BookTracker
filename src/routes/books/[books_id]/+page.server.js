@@ -1,4 +1,5 @@
 import db from "$lib/db";
+import { redirect } from "@sveltejs/kit";
 
 export async function load({ params }) {
     console.log(params.books_id); 
@@ -31,6 +32,11 @@ export const actions = {
             favorite: false
         };
         await db.updateBook(book);
+    },
+
+    delete: async ({ params }) => {
+        console.log("Deleting book with id:", params.books_id);
+        await db.deleteBook(params.books_id);
+        throw redirect(303, "/books"); // Nach dem Löschen → zurück zur Bücherübersicht
     }
 };
-

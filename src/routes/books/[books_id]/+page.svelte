@@ -20,6 +20,7 @@
             <p><strong>Rating:</strong> {book.rating}</p>
         </div>
 
+        <!-- FAVORITES ACTIONS -->
         {#if !book.favorite}
             <form method="post" action="?/addToFavourites">
                 <input type="hidden" name="bookId" value={book._id} />
@@ -35,7 +36,47 @@
                 </button>
             </form>
         {/if}
+
+        <!-- DELETE BUTTON -->
+        <form method="post" action="?/delete" style="margin-top: 1rem;">
+            <button type="submit" class="btn-red">
+                Delete book
+            </button>
+        </form>
+
     </div>
 {:else}
     <p>Book not found.</p>
 {/if}
+
+<style>
+    .btn-green {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 0.5em 1em;
+        margin-top: 0.5em;
+        cursor: pointer;
+    }
+
+    .btn-red {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 0.5em 1em;
+        margin-top: 0.5em;
+        cursor: pointer;
+    }
+
+    .btn-red:hover {
+        background-color: darkred;
+    }
+
+    .btn-green:hover {
+        background-color: darkgreen;
+    }
+
+    .book-details-box {
+        margin-bottom: 1rem;
+    }
+</style>
