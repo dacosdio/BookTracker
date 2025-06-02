@@ -177,6 +177,17 @@ async function getStatistics() {
     };
 }
 
+async function getGenres() {
+    const books = await getBooks();
+    const genres = Array.from(new Set(books.map(book => book.genre))).sort();
+    return genres;
+}
+
+async function getFavouriteBooks() {
+    const books = await getBooks();
+    return books.filter(book => book.favorite === true);
+}
+
 
 
 // Export functions
@@ -188,4 +199,6 @@ export default {
   deleteBook,
   getAuthors,
   getStatistics,
+  getGenres,
+  getFavouriteBooks,
 };
