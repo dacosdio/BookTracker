@@ -42,7 +42,7 @@
           View your favorite books. All books that you marked as favorites are
           shown here for quick access.
         </p>
-        <a href="/favourites" class="btn btn-primary">View Favorites</a>
+        <a href="/favouritebooks" class="btn btn-primary">View Favorites</a>
       </div>
     </div>
   </div>
