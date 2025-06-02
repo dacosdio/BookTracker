@@ -129,6 +129,55 @@ async function getAuthors() {
     return authors;
 }
 
+async function getStatistics() {
+    const books = await getBooks();  // deine bestehende Funktion
+
+    const totalBooks = books.length;
+
+    const statusCounts = {
+        read: books.filter(book => book.status === "read").length,
+        planned: books.filter(book => book.status === "planned").length,
+        reading: books.filter(book => book.status === "reading").length
+    };
+
+    const ratings = books.map(book => book.rating);
+    const avgRating = ratings.length > 0
+        ? (ratings.reduce((sum, r) => sum + r, 0) / ratings.length).toFixed(2)
+        : "N/A";
+
+    const genreCounts = {};
+    books.forEach(book => {
+        if (book.genre) {
+            genreCounts[book.genre] = (genreCounts[book.genre] || 0) + 1;
+        }
+    });
+
+    const authorCounts = {};
+    books.forEach(book => {
+        if (book.author) {
+            authorCounts[book.author] = (authorCounts[book.author] || 0) + 1;
+        }
+    });
+
+    let favoriteAuthor = "N/A";
+    let maxBooks = 0;
+    for (const author in authorCounts) {
+        if (authorCounts[author] > maxBooks) {
+            favoriteAuthor = author;
+            maxBooks = authorCounts[author];
+        }
+    }
+
+    return {
+        totalBooks,
+        statusCounts,
+        avgRating,
+        genreCounts,
+        favoriteAuthor
+    };
+}
+
+
 
 // Export functions
 export default {
@@ -138,4 +187,5 @@ export default {
   updateBook,
   deleteBook,
   getAuthors,
+  getStatistics,
 };
