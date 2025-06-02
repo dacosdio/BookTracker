@@ -3,33 +3,36 @@ import db from '$lib/db.js';
 export async function load() {
     const books = await db.getBooks();
 
-    // Gesamtanzahl
-    const totalBooks = books.length;
+    // Zuerst nur Favoriten filtern
+    const favoriteBooks = books.filter(book => book.favorite === true);
 
-    // Status zählen
+    // Gesamtanzahl FAVORITEN Bücher
+    const totalBooks = favoriteBooks.length;
+
+    // Status zählen NUR für Favoriten
     const statusCounts = {
-        read: books.filter(book => book.status === "read").length,
-        planned: books.filter(book => book.status === "planned").length,
-        reading: books.filter(book => book.status === "reading").length
+        read: favoriteBooks.filter(book => book.status === "read").length,
+        planned: favoriteBooks.filter(book => book.status === "planned").length,
+        reading: favoriteBooks.filter(book => book.status === "reading").length
     };
 
-    // Durchschnittliches Rating
-    const ratings = books.map(book => book.rating);
+    // Durchschnittliches Rating NUR für Favoriten
+    const ratings = favoriteBooks.map(book => book.rating);
     const avgRating = ratings.length > 0
         ? (ratings.reduce((sum, r) => sum + r, 0) / ratings.length).toFixed(2)
         : "N/A";
 
-    // Genres zählen
+    // Genres zählen NUR für Favoriten
     const genreCounts = {};
-    books.forEach(book => {
+    favoriteBooks.forEach(book => {
         if (book.genre) {
             genreCounts[book.genre] = (genreCounts[book.genre] || 0) + 1;
         }
     });
 
-    // Lieblingsautor (Autor mit meisten Büchern)
+    // Lieblingsautor (Autor mit meisten Büchern) NUR für Favoriten
     const authorCounts = {};
-    books.forEach(book => {
+    favoriteBooks.forEach(book => {
         if (book.author) {
             authorCounts[book.author] = (authorCounts[book.author] || 0) + 1;
         }
