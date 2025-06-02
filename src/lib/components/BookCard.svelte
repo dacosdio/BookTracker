@@ -32,37 +32,3 @@
 
   </div>
 </div>
-
-<style>
-  .book-card {
-    border: 1px solid #555;
-    height: 100%;
-    background-color: #444;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .details {
-    padding: 0.5em;
-  }
-
-  .title {
-    font-weight: bold;
-  }
-
-  .delete-button {
-    margin-top: 0.5em;
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
-    width: 100%;
-  }
-
-  .delete-button:hover {
-    background-color: darkred;
-  }
-</style>

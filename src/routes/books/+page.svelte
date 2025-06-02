@@ -31,6 +31,8 @@
   }
 </script>
 
+<h1>Bookslist</h1>
+
 <p><i>Daten und Bilder generiert mit ChatGPT und DALL-E</i></p>
 
 <label for="genre-filter">Filter by Genre:</label>

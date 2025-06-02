@@ -49,34 +49,4 @@
     <p>Book not found.</p>
 {/if}
 
-<style>
-    .btn-green {
-        background-color: green;
-        color: white;
-        border: none;
-        padding: 0.5em 1em;
-        margin-top: 0.5em;
-        cursor: pointer;
-    }
 
-    .btn-red {
-        background-color: red;
-        color: white;
-        border: none;
-        padding: 0.5em 1em;
-        margin-top: 0.5em;
-        cursor: pointer;
-    }
-
-    .btn-red:hover {
-        background-color: darkred;
-    }
-
-    .btn-green:hover {
-        background-color: darkgreen;
-    }
-
-    .book-details-box {
-        margin-bottom: 1rem;
-    }
-</style>

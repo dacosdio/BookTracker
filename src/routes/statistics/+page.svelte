@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import Chart from 'chart.js/auto'; // ✅ garantiert geladen!
+    import Chart from 'chart.js/auto'; 
 
     let { data } = $props();
 
@@ -49,7 +49,7 @@
     });
 </script>
 
-<h1>📊 Dashboard</h1>
+<h1>Dashboard</h1>
 
 <!-- Cards -->
 <div class="row">
@@ -89,33 +89,3 @@
 <!-- Genres Chart -->
 <h2 class="mt-5 mb-3">📚 Genres (Bar Chart)</h2>
 <canvas id="genreChart" style="max-width: 800px;"></canvas>
-
-<style>
-    h1 {
-        margin-bottom: 2rem;
-        color: lightblue;
-    }
-
-    .card h4 {
-        color: #ffcc00;
-        margin-bottom: 1rem;
-    }
-
-    .display-4 {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-
-    .display-5 {
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    ul {
-        padding-left: 1.5rem;
-    }
-
-    li {
-        margin-bottom: 0.3rem;
-    }
-</style>

@@ -1,3 +1,4 @@
+/* === Global Body Style === */
 body {
     background-color: #1e1e1e;
     color: white;
@@ -5,7 +6,56 @@ body {
     line-height: 1.6;
 }
 
+/* === Headings === */
+h1 {
+    margin-bottom: 2rem;
+    color: lightblue;
+}
 
+h2 {
+    margin-bottom: 0.5rem;
+    color: #ffcc00;
+}
+
+/* === Card Titles === */
+.card h4,
+.card-title {
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+/* === Display Styles === */
+.display-4 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.display-5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* === List Styles === */
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.3rem;
+}
+
+/* === Links === */
+a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1e90ff;
+}
+
+/* === Buttons === */
 .btn-green {
     background-color: #28a745 !important;
     color: white !important;
@@ -36,16 +86,7 @@ body {
     background-color: #c82333 !important;
 }
 
-a {
-    color: #00bfff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #1e90ff;
-}
-
+/* === Book Details Box === */
 .book-details-box {
     background-color: #333;
     border: 1px solid #555;
@@ -53,4 +94,82 @@ a:hover {
     border-radius: 8px;
     margin-bottom: 1.5rem;
     max-width: 400px;
+}
+
+/* === Author Card === */
+.author-card {
+    border: 1px solid #555;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+/* === Hero Section === */
+.hero-section {
+    background-image: url('/images/booktrackerbanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 8px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: lightblue;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.hero-section .btn {
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+}
+
+/* === Book Card === */
+.book-card {
+    border: 1px solid #555;
+    height: 100%;
+    background-color: #444;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-card .details {
+    padding: 0.5em;
+}
+
+.book-card .title {
+    font-weight: bold;
+}
+
+/* === Delete Button (Book Card) === */
+.delete-button {
+    margin-top: 0.5em;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    width: 100%;
+}
+
+.delete-button:hover {
+    background-color: darkred;
 }

@@ -28,33 +28,4 @@
     {/each}
 </div>
 
-<style>
-    .author-card {
-        border: 1px solid #555;
-        background-color: #333;
-        color: white;
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        display: flex;
-        flex-direction: column;
-    }
 
-    h1 {
-        margin-bottom: 1.5rem;
-        color: lightblue;
-    }
-
-    h2 {
-        margin-bottom: 0.5rem;
-        color: #ffcc00;
-    }
-
-    ul {
-        padding-left: 1.5rem;
-    }
-
-    li {
-        margin-bottom: 0.3rem;
-    }
-</style>
